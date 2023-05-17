@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _4513_ArdaYuksel_Proje</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/_4513_ArdaYuksel_Proje.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar text-white nav2 navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3 bg-dark">
+            <div class="container-fluid">
+                <h><a class="navbar-brand text-danger" asp-area="" asp-controller="Home" asp-action="Index">Yüksel Burger</a></h>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li style="display:flex;margin-left:auto" class="nav-item text-white">
+                            <button style="" type="button" class="btn btn-danger btn-lg"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="giris">Kaydol</a></button>
+                        </li>                    
+                        <li  class="nav-item text-white">
+                            <button style="" type="button" class="btn btn-warning btn-lg"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Sepet</a></button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class=" text-white text-center text-lg-start" style="background-color: #21081a;">
+ 
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Yüksel Burger</h5>
+
+                    <p>
+                        'Hamburgerci Arda' olarak bilinen Arda Yüksel, Sivas'ın Koyulhisar Köyü'nde doğdu. Koyulhisar Köyü'nde köy kıraathanesinde ticaret hayatına başladı. İlk dükkanını 2015 yılında İstanbul'da açtı. 2015 yılında ise 450 kişi kapasiteli Hamburgerci Arda'nın temellerini İstanbul'da attı.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">politikalar</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy">Gizlilik ve Veri Güvenliği Politikası</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Kullanim">Kullanım Koşulları </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">İletişim</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <p>+0212 698 4626</p>
+                        </li>
+                        <li>
+                            <p>+90 544 961 1574</p>
+                        </li>
+                        <li>
+                             <p>Akat,Yaren Sk. No:6 D:21, 34335 Beşiktaş/İstanbul</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+@*
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width:1000px;" class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <h3>
+                             <a class="nav-link text-danger" asp-area="" asp-controller="Home" asp-action="Index">Yüksel Burger</a>
+                        </h3>
+                    </li>
+                    <li class="nav-item ">
+                         <button style="" type="button" class="btn btn-warning btn-lg"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Kaydol</a></button>
+                    </li>
+                    <li style="display:flex;justify-content:space-between" class="nav-item ">
+                        <button style="" type="button" class="btn btn-danger btn-lg"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="kaydol">Giriş Yap</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    style="display:flex;margin-left:auto"
+</header>*@
+
