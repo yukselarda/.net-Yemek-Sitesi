@@ -9,9 +9,9 @@ namespace _4513_ArdaYuksel_Proje.Entities.Configuration
         {
             builder.HasKey(x => x.ID); 
 
-            builder.Property(x => x.Name).HasMaxLength(40).IsRequired();
+            builder.Property(x => x.Name).IsRequired();
 
-            builder.Property(x => x.Surname).HasMaxLength(30);
+            builder.Property(x => x.Surname);
 
         }
     }
