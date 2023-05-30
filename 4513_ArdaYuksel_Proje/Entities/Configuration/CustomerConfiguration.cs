@@ -13,6 +13,8 @@ namespace _4513_ArdaYuksel_Proje.Entities.Configuration
 
             builder.Property(x => x.Surname);
 
+            builder.Property(x => x.Email); 
+
         }
     }
 }

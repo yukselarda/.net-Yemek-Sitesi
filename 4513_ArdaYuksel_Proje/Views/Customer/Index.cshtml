@@ -1,0 +1,30 @@
+﻿@model CustomerIndexViewModel
+
+
+<h1>Müşteri Listesi</h1>
+
+<a class="btn btn-success" asp-route="ekle-route">Yeni Müşteri Ekle</a>
+<br />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Müşteri Adı</td>
+            <td>Müşteri Soyadı</td>
+            <td>Müşteri Email</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Customers)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.Email</td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+

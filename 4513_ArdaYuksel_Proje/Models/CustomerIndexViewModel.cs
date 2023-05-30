@@ -2,5 +2,7 @@
 {
 	public class CustomerIndexViewModel
 	{
+		public List<Entities.Customer> Customers { get; set; } = new List<Entities.Customer>();
+
 	}
 }

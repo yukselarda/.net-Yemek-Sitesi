@@ -1,3 +1,4 @@
+using _4513_ArdaYuksel_Proje.Entities;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<AppContext>(opt=>
+builder.Services.AddDbContext<AppDbContext>(opt=>
 {
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("AppCon"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("AppConn"));
 });
 
 var app = builder.Build();

@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using _4513_ArdaYuksel_Proje.Entities.Configuration;
 namespace _4513_ArdaYuksel_Proje.Entities
 {
     public class AppDbContext:DbContext

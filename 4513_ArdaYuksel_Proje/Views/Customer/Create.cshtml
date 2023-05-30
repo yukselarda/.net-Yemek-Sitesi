@@ -2,8 +2,10 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-	Layout = "_null";
+	Layout = null;
 }
+@model CustomerCreateViewModel
+
 <style>
 	body {
 		margin: 0;
@@ -123,19 +125,10 @@
 		<div class="signup">
 			<form>
 				<label for="chk" aria-hidden="true">Sign up</label>
-				<input type="text" name="txt" placeholder="User name" required="">
-				<input type="email" name="email" placeholder="Email" required="">
-				<input type="password" name="pswd" placeholder="Password" required="">
+			    <input type="text" placeholder="Ad" name="txt" asp-for="Name" required="">
+				<input type="text" placeholder="SoyAd"  name="txt" asp-for="Surname" required="">
+				<input type="text" placeholder="Email" name="txt" asp-for="Email" required="">
 				<button>Sign up</button>
-			</form>
-		</div>
-
-		<div class="login">
-			<form>
-				<label for="chk" aria-hidden="true">Login</label>
-				<input type="email" name="email" placeholder="Email" required="">
-				<input type="password" name="pswd" placeholder="Password" required="">
-				<button>Login</button>
 			</form>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 ﻿namespace _4513_ArdaYuksel_Proje.Models
 {
-	public class CustomerCreateViewModel
+	public class CustomerListViewModel
 	{
 		public string ID { get; set; }
 		public string Name { get; set; }

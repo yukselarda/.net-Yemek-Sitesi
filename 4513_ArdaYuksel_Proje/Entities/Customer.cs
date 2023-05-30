@@ -7,6 +7,11 @@
 
         public string Surname { get; set; }
 
-        public string Eamil { get; set; }
-    }
+        public string Email { get; set; }
+
+
+		public Customer() { 
+         ID = Guid.NewGuid().ToString();
+        }
+	}
 }
