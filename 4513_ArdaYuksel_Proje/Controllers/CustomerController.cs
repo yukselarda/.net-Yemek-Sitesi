@@ -22,7 +22,7 @@ namespace _4513_ArdaYuksel_Proje.Controllers
 
 			var model = new CustomerIndexViewModel
 			{
-           
+           Customers = dlist,
 			};
 			return View(model);
 		}
